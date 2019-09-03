@@ -1,10 +1,11 @@
 class ContractCaller {
-    constructor(web3, abi, contractAddress, fromAddr, fromPrivate) {
+    constructor(web3, abi, contractAddress, fromAddr, fromPrivate, gasParams) {
         this.abi = abi;
         this.contractAddress = contractAddress;
         this.fromAddr = fromAddr;
         this.fromPrivate = fromPrivate;
         this.web3 = web3;
+        this.gasParams = gasParams;
     }
     call(methodName, methodArguments, callback) {
         let web3 = this.web3;
@@ -20,8 +21,8 @@ class ContractCaller {
         let tx = {
             from: fromAddr,
             to: contractAddress,
-            gas: 50000,
-            gasPrice: 10000000000,
+            gas: this.gasParams.gas,
+            gasPrice: this.gasParams.gasPrice,
             data: encodedABI,
         };
 
