@@ -23,7 +23,7 @@ class ContractCaller {
             to: contractAddress,
             gas: this.gasParams.gas,
             gasPrice: this.gasParams.gasPrice,
-            data: encodedABI,
+            data: encodedABI
         };
 
         web3.eth.accounts.signTransaction(tx, fromPrivate).then(signed => {
