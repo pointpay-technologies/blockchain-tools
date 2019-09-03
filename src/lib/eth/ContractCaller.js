@@ -6,7 +6,7 @@ class ContractCaller {
         this.fromPrivate = fromPrivate;
         this.web3 = web3;
     }
-    call(methodName, methodArguments, done) {
+    call(methodName, methodArguments, callback) {
         let web3 = this.web3;
         let fromAddr = this.fromAddr;
         let fromPrivate = this.fromPrivate;
@@ -27,29 +27,29 @@ class ContractCaller {
 
         web3.eth.accounts.signTransaction(tx, fromPrivate).then(signed => {
             var tran = web3.eth.sendSignedTransaction(signed.rawTransaction);
-            let doneCalled = false;
+            let callbackCalled = false;
             tran.on('confirmation', (confirmationNumber, receipt) => {
-                if (confirmationNumber > 4 && !doneCalled) {
-                    doneCalled = true;
-                    done('ok', receipt);
+                if (confirmationNumber > 4 && !callbackCalled) {
+                    callbackCalled = true;
+                    callback('ok', receipt);
                 }
             });
 
             tran.on('transactionHash', hash => {
-                done('hash', hash);
+                callback('hash', hash);
             });
 
             tran.on('receipt', receipt => {
-                done('receipt', receipt);
+                callback('receipt', receipt);
             });
 
             tran.on('error', err => {
-                doneCalled = true;
-                done('error', err);
+                callbackCalled = true;
+                callback('error', err);
             });
         })
     }
-    callView(methodName, methodArguments, done) {
+    callView(methodName, methodArguments, callback) {
         let contract = new web3.eth.Contract(this.abi, this.contractAddress);
 
         let transfer = contract.methods[methodName]
@@ -57,9 +57,9 @@ class ContractCaller {
             .call();
 
         transfer.then((value) => {
-            done('ok', value)
+            callback('ok', value)
         }).catch((error) => {
-            done('error', error)
+            callback('error', error)
         })
     }
 }
