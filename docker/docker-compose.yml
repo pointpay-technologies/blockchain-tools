@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  btools_server:
+    container_name: btools_server
+    build:
+      context: './..'
+      dockerfile: './docker/Dockerfile-btools_server'
+    tty: true
+    restart: 'always'
