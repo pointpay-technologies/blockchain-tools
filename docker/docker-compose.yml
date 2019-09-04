@@ -1,10 +1,10 @@
 version: '3'
 
 services:
-  btools_server:
-    container_name: btools_server
+  btools_backend:
+    container_name: btools_backend
     build:
       context: './..'
-      dockerfile: './docker/Dockerfile-btools_server'
+      dockerfile: './docker/Dockerfile-btools_backend'
     tty: true
     restart: 'always'
