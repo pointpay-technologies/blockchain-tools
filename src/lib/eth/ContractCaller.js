@@ -7,6 +7,19 @@ class ContractCaller {
         this.web3 = web3;
         this.gasParams = gasParams;
     }
+    callView(methodName, methodArguments, callback) {
+        let contract = new web3.eth.Contract(this.abi, this.contractAddress);
+
+        let transfer = contract.methods[methodName]
+            .apply(contract.methods[methodName], methodArguments)
+            .call();
+
+        transfer.then((value) => {
+            callback('ok', value)
+        }).catch((error) => {
+            callback('error', error)
+        })
+    }
     call(methodName, methodArguments, callback) {
         let web3 = this.web3;
         let fromAddr = this.fromAddr;
@@ -48,19 +61,6 @@ class ContractCaller {
                 callbackCalled = true;
                 callback('error', err);
             });
-        })
-    }
-    callView(methodName, methodArguments, callback) {
-        let contract = new web3.eth.Contract(this.abi, this.contractAddress);
-
-        let transfer = contract.methods[methodName]
-            .apply(contract.methods[methodName], methodArguments)
-            .call();
-
-        transfer.then((value) => {
-            callback('ok', value)
-        }).catch((error) => {
-            callback('error', error)
         })
     }
 }
