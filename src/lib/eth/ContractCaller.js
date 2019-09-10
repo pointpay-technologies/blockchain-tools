@@ -34,8 +34,10 @@ class ContractCaller {
         let tx = {
             from: fromAddr,
             to: contractAddress,
+
             gas: this.gasParams.gas,
             gasPrice: this.gasParams.gasPrice,
+            
             data: encodedABI
         };
 
