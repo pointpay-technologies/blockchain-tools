@@ -20,6 +20,15 @@ class ContractCaller {
             callback('error', error)
         })
     }
+
+    async callViewAsync(methodName, methodArguments) {
+        new Promise(ok => {
+            this.callView(methodName, methodArguments, (s, v) => {
+                ok(s,v);
+            })
+        })
+    }
+
     call(methodName, methodArguments, callback) {
         let web3 = this.web3;
         let fromAddr = this.fromAddr;
@@ -37,7 +46,7 @@ class ContractCaller {
 
             gas: this.gasParams.gas,
             gasPrice: this.gasParams.gasPrice,
-            
+
             data: encodedABI
         };
 
