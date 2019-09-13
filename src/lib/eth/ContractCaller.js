@@ -23,8 +23,8 @@ class ContractCaller {
 
     async callViewAsync(methodName, methodArguments) {
         new Promise(then => {
-            this.callView(methodName, methodArguments, (s, v) => {
-                then(s,v);
+            this.callView(methodName, methodArguments, (status, v) => {
+                then(status,v);
             })
         })
     }
