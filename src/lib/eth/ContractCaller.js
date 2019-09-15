@@ -23,11 +23,12 @@ class ContractCaller {
 
     async callViewAsync(methodName, methodArguments) {
         new Promise(then => {
-            this.callView(methodName, methodArguments, (status, version) => {
-                then(status, version);
+            this.callView(methodName, methodArguments, (status, data) => {
+                then(status, data);
             })
         })
     }
+
 
     call(methodName, methodArguments, callback) {
         let web3 = this.web3;
