@@ -9,7 +9,6 @@ class Util {
         }
         return rStr;
     }
-
 }
 
 module.exports = Util;
