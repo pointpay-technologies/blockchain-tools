@@ -10,7 +10,9 @@ class Util {
         return ret;
     }
     waitForAll(functions, wait){
-        Promise.all(functions.map(fn => new Promise(then => { fn(); then(); }))).then(wait);
+        Promise.all(functions.map(
+            fn => new Promise(then => { fn(); then(); }))
+        ).then(wait);
     }
 }
 
