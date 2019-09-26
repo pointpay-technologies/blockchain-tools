@@ -11,7 +11,10 @@ class Util {
     }
     waitForAll(functions, wait){
         Promise.all(functions.map(
-            fn => new Promise(then => { fn(); then(); }))
+            fn => new Promise(then => {
+                fn();
+                then();
+            }))
         ).then(wait);
     }
 }
