@@ -6,6 +6,6 @@ class ERC20Caller {
      * @param contractCaller
      */
     constructor(contractCaller) {
-
+        this.contractCaller = contractCaller;
     }
 }
