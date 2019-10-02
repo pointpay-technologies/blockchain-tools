@@ -15,7 +15,7 @@ class Util {
                 fn();
                 then();
             }))
-        ).then(wait);
+        ).then(then => wait());
     }
 }
 

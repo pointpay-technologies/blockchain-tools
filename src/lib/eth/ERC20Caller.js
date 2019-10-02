@@ -11,6 +11,6 @@ class ERC20Caller {
     }
 
     transfer() {
-        
+
     }
 }
