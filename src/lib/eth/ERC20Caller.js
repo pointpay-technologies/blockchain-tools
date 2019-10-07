@@ -13,4 +13,8 @@ class ERC20Caller {
     transfer(fromAddress, fromPrivate) {
 
     }
+    
+    transferFrom(fromAddress, fromPrivate) {
+
+    }
 }
