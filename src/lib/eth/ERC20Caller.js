@@ -17,4 +17,8 @@ class ERC20Caller {
     transferFrom(fromAddress, fromPrivate) {
 
     }
+
+    increaseAllowance(fromAddress, fromPrivate) {
+        
+    }
 }
