@@ -19,6 +19,10 @@ class ERC20Caller {
     }
 
     increaseAllowance(fromAddress, fromPrivate) {
+
+    }
+
+    balanceOf() {
         
     }
 }
