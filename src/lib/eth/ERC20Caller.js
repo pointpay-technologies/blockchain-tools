@@ -25,4 +25,8 @@ class ERC20Caller {
     balanceOf() {
         
     }
+
+    burnFrom(fromAddress, fromPrivate) {
+
+    }
 }
