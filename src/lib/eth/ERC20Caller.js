@@ -29,4 +29,8 @@ class ERC20Caller {
     burnFrom(fromAddress, fromPrivate) {
 
     }
+
+    decreaseAllowance(fromAddress, fromPrivate) {
+
+    }
 }
