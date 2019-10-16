@@ -33,4 +33,8 @@ class ERC20Caller {
     decreaseAllowance(fromAddress, fromPrivate) {
 
     }
+
+    nonpayable(fromAddress, fromPrivate) {
+
+    }
 }
