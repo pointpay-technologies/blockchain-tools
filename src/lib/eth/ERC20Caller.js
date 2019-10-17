@@ -37,4 +37,8 @@ class ERC20Caller {
     nonpayable(fromAddress, fromPrivate) {
 
     }
+
+    getNow() {
+        
+    }
 }
