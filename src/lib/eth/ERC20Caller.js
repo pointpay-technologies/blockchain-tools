@@ -41,4 +41,8 @@ class ERC20Caller {
     getNow() {
         
     }
+
+    allowance() {
+        
+    }
 }
