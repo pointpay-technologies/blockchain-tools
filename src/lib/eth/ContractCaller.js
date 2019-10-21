@@ -1,4 +1,4 @@
-class ContractCaller {
+class EthContractCaller {
     constructor(web3, abi, contractAddress, fromAddr, fromPrivate, gasParams) {
         this.abi = abi;
         this.contractAddress = contractAddress;
