@@ -1,4 +1,5 @@
 let abi = require('./ERC20Abi');
+let EthContractCaller = require('./EthContractCaller');
 
 class ERC20Caller {
     /**
