@@ -5,7 +5,7 @@ class ERC20Caller {
     /**
      *
      * @param address
-     * @param contractCaller
+     * @param EthContractCaller contractCaller
      */
     constructor(address, contractCaller) {
         this.contractCaller = contractCaller;
