@@ -11,7 +11,7 @@ class ERC20Caller {
         this.contractCaller = contractCaller;
     }
 
-    transfer(fromAddress, fromPrivate) {
+    async transfer(fromAddress, fromPrivate) {
 
     }
     
