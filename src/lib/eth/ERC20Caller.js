@@ -15,7 +15,7 @@ class ERC20Caller {
 
     }
     
-    transferFrom(fromAddress, fromPrivate) {
+    async transferFrom(fromAddress, fromPrivate) {
 
     }
 
