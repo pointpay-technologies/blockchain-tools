@@ -19,7 +19,7 @@ class ERC20Caller {
 
     }
 
-    increaseAllowance(fromAddress, fromPrivate) {
+    async increaseAllowance(fromAddress, fromPrivate) {
 
     }
 
