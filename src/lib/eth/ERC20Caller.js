@@ -23,7 +23,7 @@ class ERC20Caller {
 
     }
 
-    balanceOf() {
+    async balanceOf() {
         
     }
 
