@@ -31,7 +31,7 @@ class ERC20Caller {
 
     }
 
-    decreaseAllowance(fromAddress, fromPrivate) {
+    async decreaseAllowance(fromAddress, fromPrivate) {
 
     }
 
