@@ -39,7 +39,7 @@ class ERC20Caller {
 
     }
 
-    getNow() {
+    async getNow() {
         
     }
 
