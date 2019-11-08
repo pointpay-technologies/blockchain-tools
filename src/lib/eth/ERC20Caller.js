@@ -43,7 +43,7 @@ class ERC20Caller {
         
     }
 
-    allowance() {
+    async allowance() {
         
     }
 }
