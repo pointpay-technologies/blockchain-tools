@@ -10,6 +10,7 @@ class ERC20Caller {
     constructor(address, contractCaller, fromAddress, fromPrivate) {
         this.address = address;
         this.contractCaller = contractCaller;
+        this.fromAddress = fromAddress;
     }
 
     async transfer(fromAddress, fromPrivate) {
