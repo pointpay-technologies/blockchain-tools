@@ -30,7 +30,7 @@ class ERC20Caller {
         
     }
 
-    async burnFrom(fromAddress, fromPrivate) {
+    async burnFrom(fromAddress) {
 
     }
 
