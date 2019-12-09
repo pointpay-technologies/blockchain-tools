@@ -38,7 +38,7 @@ class ERC20Caller {
 
     }
 
-    async nonpayable(fromAddress) {
+    async nonpayable() {
 
     }
 
