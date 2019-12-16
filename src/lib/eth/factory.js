@@ -1,6 +1,5 @@
 class EthFactory {
     getErc20Caller() {
-        
     }
 }
 
