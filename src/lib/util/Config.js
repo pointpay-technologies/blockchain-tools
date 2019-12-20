@@ -1,6 +1,8 @@
+const CONFIG_FILE = '';
 class Config {
+
     constructor() {
-        
+
     }
 }
 
