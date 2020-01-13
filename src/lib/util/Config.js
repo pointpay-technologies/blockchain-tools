@@ -1,6 +1,5 @@
 const CONFIG_FILE = '../../config.json';
 class Config {
-
     constructor() {
 
     }
