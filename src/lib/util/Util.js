@@ -22,4 +22,5 @@ export default class Util {
     randomEmail(emailDomain) {
         return this.randomString() + emailDomain;
     }
+    
 }
