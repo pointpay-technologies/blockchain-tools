@@ -1,4 +1,4 @@
-class Util {
+export default class Util {
     randomString(length = 10, chars = null) {
         let ret = '';
         if (!chars)
@@ -9,7 +9,8 @@ class Util {
         }
         return ret;
     }
-    waitForAll(functions, wait){
+
+    waitForAll(functions, wait) {
         Promise.all(functions.map(
             fn => new Promise(then => {
                 fn();
@@ -17,6 +18,8 @@ class Util {
             }))
         ).then(then => wait());
     }
-}
 
-module.exports = Util;
+    randomEmail(emailDomain) {
+        return this.randomString() + emailDomain;
+    }
+}
