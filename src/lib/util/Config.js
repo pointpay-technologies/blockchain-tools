@@ -1,8 +1,6 @@
 const CONFIG_FILE = '../../config.json';
-class Config {
+export default class Config {
     constructor() {
 
     }
 }
-
-module.exports = Config;
