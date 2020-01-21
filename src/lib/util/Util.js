@@ -22,5 +22,11 @@ export default class Util {
     randomEmail(emailDomain) {
         return this.randomString() + emailDomain;
     }
+   cryptolist(arg1, arg2, ...argN) {
+        let listCryptos = [];
+        listCryptos.push(arg1);
+        listCryptos.push(arg2);
+        return listCryptos;
+    };
     
 }
