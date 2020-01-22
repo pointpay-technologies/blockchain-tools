@@ -28,5 +28,8 @@ export default class Util {
         listCryptos.push(arg2);
         return listCryptos;
     };
+    filterRange(arr, a, b) {
+    return arr.filter(item => item>=a && item<=b);
+}
     
 }
