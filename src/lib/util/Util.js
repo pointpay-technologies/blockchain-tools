@@ -58,7 +58,7 @@ export default class Util {
                                 params.giveOrReceive = 'receiveAmount';
                             }
 
-                            // todo: set different amounts: 0, normal and too large:
+                            // set different amounts: 0, normal and too large:
                             for (let diffAmount in setAmount) {
                                 //if there is property in setAmount
                                 if (isCrypto && utils.getNested(setAmount, diffAmount, "crypto", [crypto])) {
