@@ -78,13 +78,11 @@ export default class Util {
                                     params.amount = setAmount[diffAmount];
                                 }
                             }
-                            it(`test for ${JSON.stringify(params)}`, () => {
-                                exchangeAPI.calculate(params);
-                            });
-
+                            exchangeAPI.calculate(params);
                         }
                     }
                 }
             }
         }
 }
+
