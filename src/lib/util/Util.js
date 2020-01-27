@@ -9,6 +9,13 @@ export default class Util {
         }
         return ret;
     }
+    pow(x, n) {
+        if (n == 1) {
+            return x;
+        } else {
+             return x * pow(x, n - 1);
+        }
+    }
 
     waitForAll(functions, wait) {
         Promise.all(functions.map(
