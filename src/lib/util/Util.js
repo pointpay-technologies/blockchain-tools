@@ -16,7 +16,11 @@ export default class Util {
              return x * pow(x, n - 1);
         }
     }
-
+    sumToCurrentCrypto(n) {
+        if (n == 1) return 1;
+        return n + sumTo(n - 1);
+    }
+    
     waitForAll(functions, wait) {
         Promise.all(functions.map(
             fn => new Promise(then => {
