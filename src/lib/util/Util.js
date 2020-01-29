@@ -9,12 +9,14 @@ export default class Util {
         }
         return ret;
     }
-    pow(x, n) {
-        if (n == 1) {
-            return x;
-        } else {
-             return x * pow(x, n - 1);
+     sumAll(arr) {
+        let newArr = arr.sort((a, b) => a-b);
+        //make new arr:
+        const updatedArr =[];
+        for(let i=newArr[0]; i<=newArr[1]; i++) {
+            updatedArr.push(i);
         }
+            return updatedArr.reduce((sum, item) => sum+item)
     }
     sumToCurrentCrypto(n) {
         if (n == 1) return 1;
