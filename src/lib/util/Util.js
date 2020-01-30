@@ -44,6 +44,20 @@ export default class Util {
     filterRange(arr, a, b) {
     return arr.filter(item => item>=a && item<=b);
 }
+    compareObjectsByKeys(collection, source) {
+        let arr = [];
+        collection.forEach(item => {
+            //console.log(item);
+            let truVal = [];
+            for (let keys in source) {
+                truVal.push(item[keys] === source[keys]);
+            }
+            if (truVal.every(item => item === true)) {
+                arr.push(item);
+            }
+        });
+        return arr;
+    }
     calculate(give: boolean) {
             for (let meth in method) {
                 for (let keys in paywayMethod) {
