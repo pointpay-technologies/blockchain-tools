@@ -9,6 +9,26 @@ export default class Util {
         }
         return ret;
     }
+    validateDates(start, end) {
+    if (start > end) {
+        return false;
+    }
+    if (!start && !end) {
+        x[Op.between] = [start, end];
+        console.log(`this is az: ${x}`);
+        return x;
+    }
+    if (!start) {
+        x[Op.gte] = start;
+        console.log(`this is b: ${x}`);
+
+        return x;
+    }
+    if (!end) {
+        x[Op.lte] = end;
+        return x;
+    }
+}
      sumAll(arr) {
         let newArr = arr.sort((a, b) => a-b);
         //make new arr:
