@@ -13,11 +13,6 @@ export default class Util {
     if (start > end) {
         return false;
     }
-    if (!start && !end) {
-        x[Op.between] = [start, end];
-        console.log(`this is az: ${x}`);
-        return x;
-    }
     if (!start) {
         x[Op.gte] = start;
         console.log(`this is b: ${x}`);
