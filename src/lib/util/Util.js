@@ -10,13 +10,12 @@ export default class Util {
         return ret;
     }
     validateDates(start, end) {
+        let x;
     if (start > end) {
         return false;
     }
     if (!start) {
         x[Op.gte] = start;
-        console.log(`this is b: ${x}`);
-
         return x;
     }
     if (!end) {
