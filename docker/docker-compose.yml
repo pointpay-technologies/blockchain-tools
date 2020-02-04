@@ -5,6 +5,8 @@ services:
     container_name: btools_backend
     build:
       context: './..'
-      dockerfile: './docker/Dockerfile-btools_backend'
+      dockerfile: './docker/Dockerfile-btools_backend',
+      args:
+        buildno: 1
     tty: true
     restart: 'always'
