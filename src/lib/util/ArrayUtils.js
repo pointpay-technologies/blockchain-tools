@@ -3,6 +3,8 @@ export class CreateUtils extends Utils {
   let flat = [].concat(...arr);
   return flat.some(Array.isArray) ? steamrollArray(flat) : flat;
   }
-  
+  getCryptos(arr, short) {
+    return arr.map(item => item.short===short);
+  }
 }
 
