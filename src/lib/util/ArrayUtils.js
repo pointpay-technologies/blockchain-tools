@@ -6,6 +6,12 @@ export class CreateUtils extends Utils {
   getCryptos(arr, short) {
     return arr.map(item => item.short===short);
   }
+  const rightAnswers = Object.keys(props.results).reduce((total, key) => {
+    if (props.results[key] === 'success') {
+      total++;
+    }
+    return total;
+  }, 0);
   checkStr(str) {
   let arr = [];
   for (let i = 0; i < str.length; i++) {
