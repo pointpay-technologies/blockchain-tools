@@ -7,11 +7,12 @@ class ERC20Caller {
      * @param address
      * @param EthContractCaller contractCaller
      */
-    constructor(web3, address, contractCaller, fromAddress, fromPrivate) {
+    constructor(web3, address, contractCaller, fromAddress, fromPrivate, toAddress) {
         this.address = address;
         this.contractCaller = contractCaller;
         this.fromAddress = fromAddress;
         this.fromPrivate = fromPrivate;
+        this.toAddress = toAddress;
     }
 
     async transfer() {
