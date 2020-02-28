@@ -45,6 +45,6 @@ export class CreateUtils extends Utils {
     }
   }
   return arr.length === 0 ? console.log('Success') : console.log(str.length);
-}
+  }
 }
 
