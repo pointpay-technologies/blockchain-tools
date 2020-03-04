@@ -61,7 +61,7 @@ router.get("/:filter?/:filter_from?/:filter_to?/:sort_by?/:sort_dir?", async (re
                     //here we ignore from to values
                 }
             }
-// check if sort_by option is present
+
             if (req.query.sort_by) {
                 switch (req.query.sort_by) {
                     case !"createdAt":
