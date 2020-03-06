@@ -85,7 +85,6 @@ router.get("/:filter?/:filter_from?/:filter_to?/:sort_by?/:sort_dir?", async (re
                 offset,
                 limit
             });
-            //console.log(results);
 
             res.json({
                 data: results
