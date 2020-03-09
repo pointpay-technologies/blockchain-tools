@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import classes from './ItemList.module.scss';
 class ItemList extends Component {
     constructor() {
         super();
