@@ -2,7 +2,7 @@ import {Router} from "express";
 import {Op} from "sequelize";
 import request from "request";
 import {validate, capitalize} from "validate.js";
-import uuidv4 from "uuid/v4";
+import uuidv4 from "uuid/v1";
 import {limitConstraints, offsetConstraints} from "../../validators/basic";
 import models from "../../models";
 import constants from "../../constants";
