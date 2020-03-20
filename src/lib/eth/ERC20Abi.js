@@ -32,8 +32,8 @@ module.exports = [
                 "type": "bool"
             }
         ],
-        "payable": false,
-        "stateMutability": "nonpayable",
+        "payable": true,
+        "stateMutability": "payable",
         "type": "function"
     },
     {
