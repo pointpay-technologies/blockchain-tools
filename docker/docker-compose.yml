@@ -4,7 +4,7 @@ services:
   btools_backend:
     container_name: btools_backend
     build:
-      context: './..'
+      context: './dir'
       dockerfile: './docker/Dockerfile-btools_backend',
       args:
         buildno: 1
