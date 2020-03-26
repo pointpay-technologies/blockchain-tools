@@ -19,7 +19,7 @@ $mobile: "(max-width: 479px)";
     }
     @media #{$mobile} {
       margin-top: 0;
-      padding-top: 10px;
+      padding-top:20px;
     }
   }
 }
