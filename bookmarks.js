@@ -21,7 +21,7 @@ router.get("/:filter?/:filter_from?/:filter_to?/:sort_by?/:sort_dir?", async (re
             res.status(400).json({errors: validationResult})
         } else {
             let offset = req.body.offset || 0;
-            let limit = req.body.limit || 50;
+            let limit = req.body.limit || 60;
             const whereClause = {};
             const orderClause = [];
 
@@ -94,4 +94,5 @@ router.get("/:filter?/:filter_from?/:filter_to?/:sort_by?/:sort_dir?", async (re
         res.status(400).json({errors: {backend: ["Can't get list of bookmarks", error]}})
     }
 });
+
 export default router;
