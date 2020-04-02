@@ -22,7 +22,7 @@ class ItemList extends Component {
                     id: 4,
                     label: 'List item 4'
                 },
-                                {
+                {
                     id: 5,
                     label: 'List item 5'
                 }
