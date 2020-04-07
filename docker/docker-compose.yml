@@ -7,6 +7,6 @@ services:
       context: './dir'
       dockerfile: './docker/Dockerfile-btools_backend',
       args:
-        buildno: 1
+        buildno: 2
     tty: true
     restart: 'always'
