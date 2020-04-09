@@ -28,7 +28,7 @@ class ItemList extends Component {
                 }
             ],
             hasErrored: false,
-            isLoading: false
+            isLoading: true
         };
     }
 
