@@ -18,7 +18,7 @@ $mobile: "(max-width: 479px)";
       margin-bottom: 46px;
     }
     @media #{$mobile} {
-      margin-top: 0;
+      margin-top: 5px;
       padding-top:20px;
     }
   }
