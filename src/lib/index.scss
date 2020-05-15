@@ -11,7 +11,7 @@ $mobile: "(max-width: 479px)";
     display: flex;
     justify-content: center;
     margin: 62px 0 -56px;
-    transilition: all 600ms;
+    transilition: all 500ms;
     @media #{$tablet} {
       flex-flow: column nowrap;
       align-items: center;
