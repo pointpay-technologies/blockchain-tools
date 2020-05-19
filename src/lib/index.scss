@@ -15,7 +15,7 @@ $mobile: "(max-width: 479px)";
     @media #{$tablet} {
       flex-flow: column nowrap;
       align-items: center;
-      margin-bottom: 46px;
+      margin-bottom: 45px;
     }
     @media #{$mobile} {
       margin-top: 6px;
